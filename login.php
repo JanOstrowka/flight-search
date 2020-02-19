@@ -1,5 +1,5 @@
 <?php
-    if (isset($_POST['txtEmail']) && isset($_POST['txtPassword'])) {
+    if (isset($_POST['txtLogin']) && isset($_POST['txtPassword'])) {
         // validating
         $sCorrectLogin = 'admin';
         $sCorrectPassword = 'password';
