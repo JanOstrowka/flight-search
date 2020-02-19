@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="app.css">
+    <title>Momondo</title>
+</head>
+<body>
+    <nav>
+        <a class="active" href="index.html">Momondo</a>
+        <a href="fly.php">fly</a>
+        <a href="hotel.php">hotel</a>
+        <a href="car.php">car</a>
+        <a href="prip.php">trips</a>
+        <a href="dicover.php">discover</a>
+        <a href="my-trips.php">my trips</a>
+        <a href="login.php">login</a>
+    </nav>
+
+    <section id="search">
+        <input type="text" placeholder="from city">
+        <button>&lt;- -&gt;</button>
+        <input type="text" placeholder="to city">
+        <input type="text" placeholder="from date">
+        <input type="text" placeholder="to date">
+        <button id="buttonSearch">search</button>
+    </section>
+
+    <section id="temporary">
+        <img src="images/price-chart.png" alt="">
+    </section>
+
+    <main>
+        <div id="filters">filters</div>
+        <div id="results">results</div>
+    </main>
+</body>
+</html>
