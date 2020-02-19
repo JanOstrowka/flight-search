@@ -60,7 +60,6 @@ nav > a {
     justify-content: center;
     align-content: center;
     color: white;
-    justify-content: end;
 }
 
 nav > a.active {
@@ -69,18 +68,21 @@ nav > a.active {
     color: white;
     border-width: 3px;
     border-style: solid;
-    border-image:
-            linear-gradient(
-                    to right,
-                    #f0548d,
-                    #fb9a68
-            ) 0 0 1 0;
+    border-image: linear-gradient(
+            to right,
+            #f0548d,
+            #fb9a68
+    ) 0 0 1 0;
 }
 
 
 nav > a:first-child {
     display: block;
     width: 170px;
+}
+
+nav > a:last-child {
+    justify-content: end;
 }
 
 /*search section*//*search section*//*search section*//*search section*/
