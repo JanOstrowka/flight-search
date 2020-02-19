@@ -8,13 +8,11 @@
 
         if ($sCorrectLogin == $sUserLogin && $sCorrectPassword == $sUserPassword) {
             session_start();
-
-            $_SESSION['sLogin'] = $sUserEmail;
+            $_SESSION['sLogin'] = $sUserLogin;
             header('Location: admin.php');
             exit();
         }
     }
-
 ?>
 
 <!doctype html>
