@@ -1,15 +1,15 @@
 <?php
     if (isset($_POST['txtEmail']) && isset($_POST['txtPassword'])) {
         // validating
-        $sCorrectEmail = 'admin@email.com';
+        $sCorrectLogin = 'admin';
         $sCorrectPassword = 'password';
-        $sUserEmail = $_POST['txtLogin'];
+        $sUserLogin = $_POST['txtLogin'];
         $sUserPassword = $_POST['txtPassword'];
 
-        if ($sCorrectEmail == $sUserEmail && $sCorrectPassword == $sUserPassword) {
+        if ($sCorrectLogin == $sUserLogin && $sCorrectPassword == $sUserPassword) {
             session_start();
 
-            $_SESSION['sEmail'] = $sUserEmail;
+            $_SESSION['sLogin'] = $sUserEmail;
             header('Location: admin.php');
             exit();
         }
