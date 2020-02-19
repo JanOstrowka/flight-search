@@ -6,19 +6,19 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="app.css">
+    <link rel="stylesheet" href="css/app.css">
     <title>Momondo</title>
 </head>
 <body>
     <nav>
-        <a class="active" href="index.html">Momondo</a>
-        <a href="fly.php">fly</a>
-        <a href="hotel.php">hotel</a>
-        <a href="car.php">car</a>
-        <a href="prip.php">trips</a>
-        <a href="dicover.php">discover</a>
-        <a href="my-trips.php">my trips</a>
-        <a href="login.php">login</a>
+        <a class="active" href="index.html"><span>mo</span><span>mon</span><span>do</span></a>
+        <a href="#">fly</a>
+        <a href="#">hotel</a>
+        <a href="#">car</a>
+        <a href="#">trips</a>
+        <a href="#">discover</a>
+        <a href="#">my trips</a>
+        <a href="admin.php">login</a>
     </nav>
 
     <section id="search">
@@ -36,7 +36,57 @@
 
     <main>
         <div id="filters">filters</div>
-        <div id="results">results</div>
+        <div id="results">results
+            <div id="price-options">
+                <div>
+                    cheapest
+                    <p> 6.585 kr 25t. 21min. </p>
+                </div>
+                <div class="active">
+                    best
+                    <p> 2.585 kr 5t. 32min. </p>
+                </div>
+                <div>
+                    fastest
+                    <p> 9.585 kr 2t. 1min. </p>
+                </div>
+                <div>
+                    custom
+                    <p> 10.585 kr 3t. 24min. </p>
+                </div>
+            </div>
+            <div id="flights">
+                <div id="flight">
+                    <div id="flight-route">
+                        <div>check</div>
+                        <div>
+                            <img class="airline-icon" src="images/airlines/AC.png" alt="">
+                        </div>
+                        <div>schedule</div>
+                        <div>stop</div>
+                        <div>total time</div>
+                    </div>
+                    <div id="flight-buy">
+                        <button>buy</button>
+                    </div>
+                </div>
+                <div id="flight">
+                    <div id="flight-route">
+                        <div>check</div>
+                        <div>
+                            <img class="airline-icon" src="images/airlines/KL.png" alt="">
+                        </div>
+                        <div>schedule</div>
+                        <div>stop</div>
+                        <div>total time</div>
+                    </div>
+                    <div id="flight-buy">
+                        <button>buy</button>
+                    </div>
+                </div>
+            </div>
+        </div>
     </main>
+    <script src="javascript/search-box.js"></script>
 </body>
 </html>

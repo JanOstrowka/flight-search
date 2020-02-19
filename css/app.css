@@ -58,16 +58,18 @@ nav > a {
     justify-content: center;
     align-content: center;
     color: white;
+    justify-content: end;
 }
 
 nav > a.active {
     background-color: rgba(255, 255, 255, 0.5);
 }
 
-nav > a:last-child{
-    justify-content: end;
-}
 
+nav > a:first-child{
+    display: inline;
+    justify-content: center;
+}
 /*search section*//*search section*//*search section*//*search section*/
 #search {
     display: grid;
@@ -88,7 +90,7 @@ nav > a:last-child{
 
 #buttonSearch {
     color: white;
-    background-color: #de1666;
+    background-color: #f7498e;
 }
 /*temporary section*//*temporary section*//*temporary section*//*temporary section*/
 section#temporary{
@@ -118,4 +120,72 @@ main{
 }
 #results{
     padding: 10px;
+}
+/*result price options bar*/
+#price-options{
+    width: 100%;
+    background-color: purple;
+    border-radius: 5px;
+    display: grid;
+    grid-template-columns: 10fr 10fr 10fr 10fr;
+}
+
+#price-options > div {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    padding: 15px;
+    text-align: left;
+    text-transform: capitalize;
+}
+
+#price-options > div.active {
+    background-color: #de1666;
+}
+
+#price-options > div > p {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+    font-size: 15px;
+}
+
+#flights {
+    margin-top: 20px;
+    display: grid;
+    grid-template-rows: 10fr;
+    grid-row-gap: 2vh;
+}
+
+#flight {
+    width: 100%;
+    padding: 0px 0px;
+    display: grid;
+    grid-template-columns: 80fr 20fr;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+#flight-route{
+    color: black;
+    background-color: white;
+    display: grid;
+    grid-template-columns: 10fr 10fr 10fr 10fr 10fr;
+    padding: 20px 10px;
+}
+
+#flight-buy{
+    color: black;
+    background-color: #f0f0f0;
+}
+
+#flight-buy > button {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    color: white;
+    background-color: #15986d;
+}
+
+.airline-icon {
+    width: 40px;
 }
