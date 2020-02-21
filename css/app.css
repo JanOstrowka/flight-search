@@ -33,6 +33,10 @@ input {
     padding-left: 10px;
 }
 
+input[type=checkbox]{
+    height: 25px;
+}
+
 button {
     width: 100%;
     height: 35px;
@@ -50,7 +54,7 @@ nav {
     grid-template-columns: 4fr 1fr 1fr 1fr 1fr 1fr 1fr 0.8fr;
     width: 100%;
     height: 70px;
-    padding: 0 10%;
+    padding: 0 4%;
     margin: auto;
     background-color: #130026;
 }
@@ -63,6 +67,19 @@ nav > a {
 }
 
 nav > a.active {
+    max-width: 250px;
+    padding: 1rem;
+    color: #fb9a68;
+    border-width: 3px;
+    border-style: solid;
+    border-image: linear-gradient(
+            to right,
+            #f0548d,
+            #fb9a68
+    ) 0 0 1 0;
+}
+
+nav > a:hover {
     max-width: 250px;
     padding: 1rem;
     color: #fb9a68;
@@ -93,9 +110,9 @@ nav > a:last-child {
     justify-content: center;
     align-content: center;
     width: 100%;
-    padding: 1.5% 10%;
+    padding: 1.5% 4%;
     color: white;
-    background-color: rgba(255, 255, 255, 0.1);
+    background-color: #130026;
 }
 
 #search :nth-child(2) {
@@ -111,7 +128,8 @@ nav > a:last-child {
 /*temporary section*//*temporary section*//*temporary section*//*temporary section*/
 section#temporary {
     width: 100%;
-    padding: 0 10%;
+    padding: 0 4%;
+    background-color: #130026;
 }
 
 section#temporary img {
@@ -125,9 +143,9 @@ main {
     grid-template-columns: 20fr 50fr;
     grid-column-gap: 20px;
     color: white;
-    background-color: rgba(255, 255, 255, 0.06);
+    background-color: #0000;
     width: 100%;
-    padding: 2% 10%;
+    padding: 2% 4%;
 }
 
 #filters {
@@ -187,14 +205,36 @@ main {
 #flight-route {
     color: black;
     background-color: white;
-    display: grid;
-    grid-template-columns: 10fr 10fr 10fr 10fr 10fr;
     padding: 20px 10px;
+    grid-template-rows: 1fr;
+    grid-row-gap: 10px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+}
+
+#flight-route .row {
+    color: black;
+    background-color: white;
+    display: grid;
+    grid-template-columns: 3fr 5fr 10fr 5fr 8fr;
+    grid-column-gap: 5fr;
+    padding: 15px 10px;
 }
 
 #flight-buy {
+    padding: 20px 10px;
     color: black;
     background-color: #f0f0f0;
+    display: grid;
+}
+
+#flight-buy > div {
+    font-size: 24px;
+    font-weight: 700;
+}
+#flight-buy > div > p {
+    font-size: 16px;
+    font-weight: 300;
 }
 
 #flight-buy > button {
@@ -204,6 +244,7 @@ main {
     color: white;
     background-color: #15986d;
     cursor: pointer;
+    align-self: end;
 }
 
 #flight-buy > button:hover {

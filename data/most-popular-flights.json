@@ -1,0 +1,22 @@
+[
+  { "id":1,
+    "flightId":"KLM89",
+    "companyName":"Air France",
+    "companyShortcut":"KL",
+    "departureTime":1582188889,
+    "arrivalTime":1582361689,
+    "totalTime": 700,
+    "price":20,
+    "currency":"DKK"
+  },
+  { "id":2,
+    "flightId":"KLM89",
+    "companyName":"Air France",
+    "companyShortcut":"AC",
+    "departureTime":1582188889,
+    "arrivalTime":1582361689,
+    "totalTime": 400,
+    "price":80,
+    "currency":"DKK"
+  }
+]
