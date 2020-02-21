@@ -19,6 +19,9 @@ form {
     margin: 15% 25%;
     border-radius: 5px;
     padding: 10px;
+    display: grid;
+    grid-template-rows: 3fr 2fr 2fr 2fr;
+    grid-row-gap: 1vh;
 }
 
 form > h1 {

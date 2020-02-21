@@ -33,7 +33,7 @@ input {
     padding-left: 10px;
 }
 
-input[type=checkbox]{
+input[type=checkbox] {
     height: 25px;
 }
 
@@ -92,14 +92,27 @@ nav > a:hover {
     ) 0 0 1 0;
 }
 
-
 nav > a:first-child {
     display: block;
     width: 170px;
 }
 
+nav > a:first-child:hover {
+    max-width: unset;
+    padding: unset;
+    color: unset;
+    border-width: unset;
+    border-style: unset;
+}
+
 nav > a:last-child {
     justify-content: end;
+}
+
+nav > a:last-child:hover {
+    max-width: unset;
+    padding: unset;
+    border-width: unset;
 }
 
 /*search section*//*search section*//*search section*//*search section*/
@@ -232,6 +245,7 @@ main {
     font-size: 24px;
     font-weight: 700;
 }
+
 #flight-buy > div > p {
     font-size: 16px;
     font-weight: 300;
